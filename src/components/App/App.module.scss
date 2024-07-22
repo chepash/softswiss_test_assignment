@@ -1,0 +1,22 @@
+.progressContainer {
+  display: block;
+
+  width: 100%;
+  height: var(--progress-height);
+
+  background-color: var(--background-fill-color);
+  border-radius: var(--progress-border-radius);
+}
+
+.progressBar {
+  width: 0%;
+  height: var(--progress-height);
+  background-color: var(--fill-color);
+  animation: progress-animation linear forwards var(--animation-duration, 5s);
+}
+
+@keyframes progress-animation {
+  to {
+    width: 100%;
+  }
+}
