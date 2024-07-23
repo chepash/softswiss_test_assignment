@@ -1,10 +1,11 @@
 :root {
-  --pink: hsl(316deg 100% 72% / 100%);
-  --yellow: hsl(65deg 100% 50% / 100%);
-  --blue: hsl(221deg 40% 32% / 100%);
-  --black: hsl(0deg 0% 0% / 100%);
-  --white: hsl(0deg 0% 100% / 100%);
+  --pink: rgb(255 112 217);
+  --yellow: rgb(234 255 0);
+  --blue: rgb(49 70 114);
+  --black: rgb(0 0 0);
+  --white: rgb(255 255 255);
   --hover-gradient: linear-gradient(98.25deg, var(--yellow) 18.56%, var(--pink) 76.02%);
+  --page-gradient: linear-gradient(196.2deg, rgb(13 30 72) 0%, rgb(48 69 113) 100%);
 
   /* Size */
   --el-max-width: 1088px;

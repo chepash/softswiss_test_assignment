@@ -1,12 +1,27 @@
 .page {
+  display: flex;
+  flex-direction: column;
+
   height: 100vh;
   margin: 0;
   padding: 0;
 
   font-family: Lato, sans-serif;
   font-style: normal;
-  line-height: 1.2;
   color: var(--white);
 
-  background-color: var(--black);
+  background: var(--page-gradient);
+
+  &__header {
+    flex: 0;
+  }
+
+  &__content {
+    flex: 1;
+    // background-color: linear-gradient(196.2deg, #0d1e48 0%, #304571 100%);
+  }
+
+  &__footer {
+    flex: 0;
+  }
 }

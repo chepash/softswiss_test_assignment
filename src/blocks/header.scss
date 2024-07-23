@@ -1,7 +1,8 @@
 .header {
   display: flex;
   justify-content: center;
-  height: 80px;
+  min-height: 80px;
+  background-color: var(--black);
 
   &__content {
     display: flex;
@@ -27,6 +28,6 @@
   }
 
   @media screen and (width < 768px) {
-    height: 48px;
+    min-height: 48px;
   }
 }
