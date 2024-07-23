@@ -1,0 +1,44 @@
+.nav {
+  font-size: 18px;
+  font-weight: 700;
+
+  &__links {
+    display: flex;
+    column-gap: 58px;
+    align-items: center;
+    padding: 8px 10px 0 0;
+
+    @media screen and (width = 768px) {
+      column-gap: 52px;
+      padding: 0 13px 0 0;
+    }
+  }
+
+  &__link {
+    &:hover {
+      opacity: 0.6;
+      background-image: var(--hover-gradient);
+      /* stylelint-disable-next-line property-no-vendor-prefix */
+      -webkit-background-clip: text; // Doesn't work with a stacking context(e.g. position: relative), see Chromium bug
+      background-clip: text;
+
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &__icon {
+    & path {
+      fill: var(--white);
+    }
+  }
+
+  &__link:hover &__icon {
+    & path {
+      fill: url('#paint0_linear_16_42');
+    }
+  }
+
+  @media screen and (width < 768px) {
+    display: none;
+  }
+}

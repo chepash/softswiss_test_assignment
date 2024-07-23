@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: var(--el-max-width);
+  }
+
+  &__logo {
+    width: 105px;
+    height: 36px;
+
+    background-image: url('@assets/svg/logo.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media screen and (width <= 768px) {
+      width: 74px;
+      height: 26px;
+    }
+  }
+
+  @media screen and (width < 768px) {
+    height: 48px;
+  }
+}
