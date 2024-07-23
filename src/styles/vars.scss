@@ -4,4 +4,20 @@
   --blue: hsl(221deg 40% 32% / 100%);
   --black: hsl(0deg 0% 0% / 100%);
   --white: hsl(0deg 0% 100% / 100%);
+  --hover-gradient: linear-gradient(98.25deg, var(--yellow) 18.56%, var(--pink) 76.02%);
+
+  /* Size */
+  --el-max-width: 1088px;
+
+  @media screen and (width < 1248px) {
+    --el-max-width: 87vw; // 1088/1248  =  0.87
+  }
+
+  @media screen and (width <= 768px) {
+    --el-max-width: 92vw; // 709/768 =  0.92
+  }
+
+  @media screen and (width <= 360px) {
+    --el-max-width: 88vw; // 320/360 = 0.88
+  }
 }
