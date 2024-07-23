@@ -1,9 +1,10 @@
 import BuscketIcon from '@assets/svg/busket.svg?react';
+import RocketIcon from '@assets/svg/rocket.svg?react';
 
 function App() {
   return (
     <div className="page">
-      <header className="header">
+      <header className="header page__header">
         <div className="header__content">
           <div className="header__logo" />
           <nav className="nav">
@@ -27,8 +28,11 @@ function App() {
           </nav>
         </div>
       </header>
-      <main></main>
-      <footer className="footer"></footer>
+      <main className="page__content"></main>
+      <footer className="footer page__footer">
+        <RocketIcon className="footer__icon" />
+        <p className="footer__text">Exciting space adventure!</p>
+      </footer>
     </div>
   );
 }
