@@ -40,7 +40,50 @@ function App() {
             <button className="button">Learn more</button>
           </div>
         </section>
-        <section aria-label="Offers cards section"></section>
+
+        <section className="offers" aria-label="Offers cards section">
+          <h2 className="section-title offers__title">Offers</h2>
+          <ul className="offers__cards">
+            <li className="card">
+              <h3 className="card__title">Move the borders of&nbsp;reality!</h3>
+
+              <p className="card__subtitle card__subtitle_text_desktop">
+                {"Go on a space adventure - it's possible with us!"}
+              </p>
+              <p className="card__subtitle card__subtitle_text_mobile">Go on a space adventure</p>
+
+              <button className="button card__button">Learn more</button>
+            </li>
+
+            <li className="card card_narrow">
+              <h3 className="card__title card__title_narrow">
+                Space is not just stars and planets
+              </h3>
+
+              <p className="card__subtitle card__subtitle_text_desktop">Go on a space adventure</p>
+              <p className="card__subtitle card__subtitle_text_mobile">
+                it is a majestic journey to
+              </p>
+
+              <button className="button card__button">Learn more</button>
+            </li>
+
+            <li className="card card_narrow">
+              <h3 className="card__title card__title_narrow">
+                For those who&nbsp;dream of&nbsp;stars
+              </h3>
+              <p className="card__subtitle">Our offer: make your dream come true</p>
+              <button className="button card__button">Learn more</button>
+            </li>
+
+            <li className="card">
+              <h3 className="card__title">Fulfill your fantastic dreams</h3>
+              <p className="card__subtitle">Space has never been so close</p>
+              <button className="button card__button">Learn more</button>
+            </li>
+          </ul>
+        </section>
+
         <section aria-label="Embark on a space journey article section"></section>
       </main>
       <footer className="footer page__footer">

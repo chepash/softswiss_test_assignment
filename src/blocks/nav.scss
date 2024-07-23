@@ -8,11 +8,6 @@
     column-gap: 58px;
     align-items: center;
     padding: 8px 10px 0 0;
-
-    @media screen and (width = 768px) {
-      column-gap: 52px;
-      padding: 0 13px 0 0;
-    }
   }
 
   &__link {
@@ -38,8 +33,19 @@
       fill: url('#paint0_linear_16_42');
     }
   }
+}
 
-  @media screen and (width < 768px) {
+/* Media Queries */
+
+@media screen and (width = 768px) {
+  .nav__links {
+    column-gap: 52px;
+    padding: 0 13px 0 0;
+  }
+}
+
+@media screen and (width < 768px) {
+  .nav {
     display: none;
   }
 }

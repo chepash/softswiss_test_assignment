@@ -1,0 +1,122 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 22px;
+  justify-content: flex-end;
+
+  min-height: 350px;
+  padding: 35px 40% 35px 35px;
+
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+
+  &_narrow {
+    padding: 35px;
+  }
+
+  &__title {
+    font-size: clamp(40px, 5.9vw, 74px);
+    font-weight: 800;
+    line-height: 1;
+
+    &_narrow {
+      max-width: max(248px, 70%);
+      font-size: clamp(40px, 3.68vw, 46px);
+    }
+  }
+
+  &__subtitle {
+    font-size: 26px;
+    font-size: clamp(16px, 2.1vw, 26px);
+    font-weight: 800;
+    line-height: 1.2; // 31.2px;
+
+    &_text_desktop {
+      display: inline;
+    }
+
+    &_text_mobile {
+      display: none;
+    }
+  }
+
+  &__button {
+    color: var(--yellow);
+    background-color: transparent;
+    border: 2px solid var(--yellow);
+  }
+}
+
+.card:nth-child(4n - 3),
+.card:nth-child(4n) {
+  grid-column: span 2;
+}
+
+.card:nth-child(4n - 3) {
+  background-image: var(--card-dark-gradient), url('@assets/images/cardBG_1.png');
+}
+
+.card:nth-child(4n - 2) {
+  background-image: var(--card-dark-gradient), url('@assets/images/cardBG_2.png');
+}
+
+.card:nth-child(4n - 1) {
+  background-image: var(--card-dark-gradient), url('@assets/images/cardBG_3.png');
+}
+
+.card:nth-child(4n) {
+  background-image: var(--card-dark-gradient), url('@assets/images/cardBG_4.png');
+}
+
+@media screen and (width < 1248px) and (width > 768px) {
+  .card__subtitle {
+    min-height: 2.4em; // double line-height
+  }
+}
+
+@media screen and (width <= 768px) {
+  .card {
+    padding: 27px;
+  }
+
+  .card:nth-child(4n - 3),
+  .card:nth-child(4n) {
+    grid-column: span 1;
+  }
+
+  .card__button {
+    padding: 7px 40px;
+    font-size: 16px;
+  }
+
+  .card__title {
+    max-width: 85%;
+    font-size: 5.2vw; // 40px
+  }
+
+  .card__subtitle_text_desktop {
+    display: none;
+  }
+
+  .card__subtitle_text_mobile {
+    display: inline;
+  }
+}
+
+@media screen and (width <= 760px) and (width > 530px) {
+  .card__subtitle {
+    min-height: 2.4em; // double line-height
+  }
+}
+
+@media screen and (width <= 530px) {
+  .card {
+    padding: 27px 27px 35px;
+  }
+
+  .card__title {
+    max-width: 100%;
+    font-size: 40px;
+  }
+}

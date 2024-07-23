@@ -1,0 +1,43 @@
+.offers {
+  width: 100%;
+  max-width: var(--el-max-width);
+  margin-top: 58px;
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+@media screen and (width <= 768px) {
+  .offers {
+    margin-top: 40px;
+  }
+
+  .offers__title {
+    margin-bottom: 33px;
+  }
+
+  .offers__cards {
+    gap: 30px;
+  }
+}
+
+@media screen and (width <= 530px) {
+  .offers {
+    margin-top: 52px;
+  }
+
+  .offers__title {
+    margin-bottom: 30px;
+  }
+
+  .offers__cards {
+    grid-template-columns: 1fr;
+  }
+}

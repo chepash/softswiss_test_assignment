@@ -4,14 +4,17 @@
   display: flex;
   justify-content: center;
 
+  width: 100%;
   padding: 91px 0 119px;
 
-  background-image: url('@assets/images/EARTH.png'), url('@assets/images/promoBG.png');
+  background-image: url('@assets/images/EARTH.png'), var(--promo-dark-gradient),
+    url('@assets/images/promoBG.png');
   background-repeat: no-repeat;
   background-position:
     top 70% left calc(var(--text-max-width) + 160px),
+    center,
     center;
-  background-size: auto, cover;
+  background-size: auto, cover, cover;
 
   &__content {
     display: flex;
@@ -51,6 +54,7 @@
   .promo {
     background-position:
       top 70% left calc((100vw - 1248px) / 2 + var(--text-max-width) + 160px),
+      center,
       center;
   }
 }
@@ -61,6 +65,7 @@
 
     background-position:
       top 70% left calc(var(--text-max-width) + 20vw),
+      center,
       center;
   }
 
@@ -73,13 +78,14 @@
   }
 }
 
-@media screen and (width <= 500px) {
+@media screen and (width <= 530px) {
   .promo {
     padding: 250px 0 44px;
     background-position:
       top -140% center,
+      center,
       center;
-    background-size: 330px, cover;
+    background-size: 330px, cover, cover;
   }
 
   .promo__content {

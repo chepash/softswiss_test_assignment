@@ -6,19 +6,25 @@
   --white: rgb(255 255 255);
   --hover-gradient: linear-gradient(98.25deg, var(--yellow) 18.56%, var(--pink) 76.02%);
   --page-gradient: linear-gradient(196.2deg, rgb(13 30 72) 0%, rgb(48 69 113) 100%);
+  --promo-dark-gradient: linear-gradient(
+    270deg,
+    rgb(0 0 0 / 0%) -0.52%,
+    rgb(15 20 32 / 79%) 99.48%
+  );
+  --card-dark-gradient: linear-gradient(270deg, rgb(0 0 0 / 0%) 0%, rgb(15 20 32 / 79%) 100%);
 
   /* Size */
   --el-max-width: 1088px;
 
   @media screen and (width < 1248px) {
-    --el-max-width: 87vw; // 1088/1248  =  0.87
+    --el-max-width: 87vw;
   }
 
   @media screen and (width <= 768px) {
-    --el-max-width: 92vw; // 709/768 =  0.92
+    --el-max-width: 92vw;
   }
 
   @media screen and (width <= 360px) {
-    --el-max-width: 88vw; // 320/360 = 0.88
+    --el-max-width: 89vw;
   }
 }
