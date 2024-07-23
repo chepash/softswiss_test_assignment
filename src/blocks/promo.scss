@@ -1,0 +1,89 @@
+.promo {
+  --text-max-width: clamp(411px, 56vw, 691px);
+
+  display: flex;
+  justify-content: center;
+
+  padding: 91px 0 119px;
+
+  background-image: url('@assets/images/EARTH.png'), url('@assets/images/promoBG.png');
+  background-repeat: no-repeat;
+  background-position:
+    top 70% left calc(var(--text-max-width) + 160px),
+    center;
+  background-size: auto, cover;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 22px;
+
+    width: 100%;
+    max-width: var(--el-max-width);
+  }
+
+  &__title {
+    max-width: var(--text-max-width);
+    font-size: clamp(48px, 5.6vw, 72px);
+    font-weight: 800;
+    line-height: 1;
+
+    &_pink {
+      color: var(--pink);
+    }
+  }
+
+  &__subtitle {
+    max-width: var(--text-max-width);
+
+    font-size: 32px;
+    font-size: clamp(22px, 2.5vw, 32px);
+    font-weight: 800;
+    line-height: 1.2; // 38.4px;
+
+    &_yellow {
+      color: var(--yellow);
+    }
+  }
+}
+
+@media screen and (width > 1248px) {
+  .promo {
+    background-position:
+      top 70% left calc((100vw - 1248px) / 2 + var(--text-max-width) + 160px),
+      center;
+  }
+}
+
+@media screen and (width <= 768px) {
+  .promo {
+    --text-max-width: clamp(296px, 53vw, 411px);
+
+    background-position:
+      top 70% left calc(var(--text-max-width) + 20vw),
+      center;
+  }
+
+  .promo__title {
+    font-size: clamp(36px, 6.2vw, 48px);
+  }
+
+  .promo__subtitle {
+    font-size: clamp(16px, 2.5vw, 22px);
+  }
+}
+
+@media screen and (width <= 500px) {
+  .promo {
+    padding: 250px 0 44px;
+    background-position:
+      top -140% center,
+      center;
+    background-size: 330px, cover;
+  }
+
+  .promo__content {
+    row-gap: 17px;
+    align-items: center;
+  }
+}
