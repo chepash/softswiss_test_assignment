@@ -9,4 +9,9 @@
 
 **Total Time**: Approximately 19 hours were spent on completing the project.
 
+##### Node.js and npm Versions
+
+- **Node.js**: v20.10.0
+- **npm**: 9.6.7
+
 #### [GitHub Pages link](https://chepash.github.io/softswiss_test_assignment/).
