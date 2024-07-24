@@ -1,7 +1,11 @@
 .header {
+  position: relative; // mobile menu relative
+
   display: flex;
   justify-content: center;
+
   min-height: 80px;
+
   background-color: var(--black);
 
   &__content {

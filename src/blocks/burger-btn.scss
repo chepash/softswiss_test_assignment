@@ -1,0 +1,55 @@
+.burger-checkbox {
+  display: none;
+}
+
+.burger-btn {
+  cursor: pointer;
+  display: none;
+  width: 24px;
+  height: 18px;
+
+  &__part {
+    position: relative;
+
+    width: 24px;
+    height: 2px;
+    margin-top: 6px;
+
+    background-color: var(--white);
+    border-radius: 2px;
+
+    transition: all 0.3s ease-in-out;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+}
+
+.burger-checkbox:checked + .burger-btn .top-bun {
+  top: 8px;
+  transform: rotateZ(40deg);
+  width: 24px;
+}
+
+.burger-checkbox:checked + .burger-btn .meat {
+  top: 0;
+  transform: rotateZ(-40deg);
+  width: 24px;
+}
+
+.burger-checkbox:checked + .burger-btn .bottom-bun {
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+.burger-checkbox:checked ~ .nav_mobile {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (width < 768px) {
+  .burger-btn {
+    display: block;
+  }
+}

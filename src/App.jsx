@@ -26,6 +26,33 @@ function App() {
               </li>
             </ul>
           </nav>
+
+          {/* mobile menu no JS */}
+          <input id="toggle" type="checkbox" className="burger-checkbox" />
+          <label htmlFor="toggle" className="burger-btn">
+            <div className="top-bun burger-btn__part" />
+            <div className="meat burger-btn__part" />
+            <div className="bottom-bun burger-btn__part" />
+          </label>
+          <nav className="nav nav_mobile">
+            <ul className="nav__links nav__links_mobile">
+              <li>
+                <a href="#" className="nav__link">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#" className="nav__link">
+                  Products
+                </a>
+              </li>
+              <li>
+                <a href="#" className="nav__link">
+                  <BuscketIcon className="nav__icon" />
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </header>
 
