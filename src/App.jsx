@@ -84,7 +84,41 @@ function App() {
           </ul>
         </section>
 
-        <section aria-label="Embark on a space journey article section"></section>
+        <section className="article" aria-label="Embark on a space journey article section">
+          <h2 className="section-title article__title">Embark on a space journey</h2>
+          <p className="article__text">
+            Travelling into space is&nbsp;one of&nbsp;the most exciting and unforgettable adventures
+            that can change your life forever. And if&nbsp;you have ever dreamed of&nbsp;exploring
+            stars, planets and galaxies, then our company is&nbsp;ready to&nbsp;help you realize
+            this dream. We&nbsp;offer a&nbsp;unique experience that will allow you
+            to&nbsp;go&nbsp;on&nbsp;a&nbsp;space journey and see all the secrets of&nbsp;the
+            universe. We&nbsp;guarantee that every moment in&nbsp;space will be&nbsp;filled with
+            incredible impressions, excitement and new discoveries. Our team of&nbsp;professionals
+            takes care of your safety and comfort so&nbsp;that you can fully enjoy your adventure
+            in&nbsp;space. We&nbsp;offer various options for space excursions.
+          </p>
+
+          <input type="checkbox" id="expander-btn" className="expander-checkbox" />
+          <label htmlFor="expander-btn" className="expander-label article__expanse">
+            Read more
+          </label>
+
+          <div className="article__hidden-content">
+            <p className="article__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nemo dolores soluta
+              dicta blanditiis dolorum quas tempore mollitia dolor officia a&nbsp;excepturi, rerum
+              impedit molestias modi consequuntur ipsum! Consequatur, distinctio?
+            </p>
+
+            <RocketIcon />
+
+            <p className="article__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit nihil earum assumenda
+              sit minima harum veritatis eaque commodi debitis corporis ullam necessitatibus
+              voluptatibus aperiam, animi molestiae laborum eius magnam recusandae.
+            </p>
+          </div>
+        </section>
       </main>
       <footer className="footer page__footer">
         <RocketIcon className="footer__icon" />

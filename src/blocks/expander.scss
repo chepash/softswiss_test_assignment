@@ -1,0 +1,22 @@
+.expander-label {
+  cursor: pointer;
+  display: inline-block;
+  color: var(--yellow);
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.expander-checkbox {
+  display: none;
+}
+
+.expander-checkbox:checked ~ .article__hidden-content {
+  max-height: 1000px; // ok for static content
+}
+
+.expander-checkbox:checked + .expander-label {
+  display: none;
+}
