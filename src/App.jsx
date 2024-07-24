@@ -44,7 +44,7 @@ function App() {
         <section className="offers" aria-label="Offers cards section">
           <h2 className="section-title offers__title">Offers</h2>
           <ul className="offers__cards">
-            <li className="card">
+            <li className="card card_size_wide">
               <h3 className="card__title">Move the borders of&nbsp;reality!</h3>
 
               <p className="card__subtitle card__subtitle_text_desktop">
@@ -55,7 +55,7 @@ function App() {
               <button className="button card__button">Learn more</button>
             </li>
 
-            <li className="card card_narrow">
+            <li className="card card_size_narrow">
               <h3 className="card__title card__title_narrow">
                 Space is not just stars and planets
               </h3>
@@ -68,7 +68,7 @@ function App() {
               <button className="button card__button">Learn more</button>
             </li>
 
-            <li className="card card_narrow">
+            <li className="card card_size_narrow">
               <h3 className="card__title card__title_narrow">
                 For those who&nbsp;dream of&nbsp;stars
               </h3>
@@ -76,7 +76,7 @@ function App() {
               <button className="button card__button">Learn more</button>
             </li>
 
-            <li className="card">
+            <li className="card card_size_wide">
               <h3 className="card__title">Fulfill your fantastic dreams</h3>
               <p className="card__subtitle">Space has never been so close</p>
               <button className="button card__button">Learn more</button>
