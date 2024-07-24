@@ -3,10 +3,14 @@
 }
 
 .burger-btn {
-  cursor: pointer;
+  user-select: none;
+
   display: none;
+
   width: 24px;
   height: 18px;
+
+  -webkit-tap-highlight-color: transparent;
 
   &__part {
     position: relative;
