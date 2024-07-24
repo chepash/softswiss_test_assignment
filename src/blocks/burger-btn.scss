@@ -47,7 +47,7 @@
   opacity: 0;
 }
 
-.burger-checkbox:checked ~ .nav_mobile {
+.burger-checkbox:checked ~ .nav {
   visibility: visible;
   opacity: 1;
 }
