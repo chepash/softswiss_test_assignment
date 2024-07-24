@@ -1,7 +1,13 @@
 .expander-label {
   cursor: pointer;
+
   display: inline-block;
+
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.2; // 24px
   color: var(--yellow);
+
   transition: opacity 0.2s ease;
 
   &:hover {
@@ -19,4 +25,16 @@
 
 .expander-checkbox:checked + .expander-label {
   display: none;
+}
+
+@media screen and (width <= 768px) {
+  .expander-label {
+    font-size: 16px;
+  }
+}
+
+@media screen and (width <= 530px) {
+  .expander-label {
+    font-size: 14px;
+  }
 }

@@ -28,6 +28,7 @@ function App() {
           </nav>
         </div>
       </header>
+
       <main className="page__content">
         <section className="promo" aria-label="promo section">
           <div className="promo__content">
@@ -120,6 +121,7 @@ function App() {
           </div>
         </section>
       </main>
+
       <footer className="footer page__footer">
         <RocketIcon className="footer__icon" />
         <p className="footer__text">Exciting space adventure!</p>

@@ -63,10 +63,12 @@
   .promo {
     --text-max-width: clamp(296px, 53vw, 411px);
 
+    padding: 103px 0 100px;
     background-position:
-      top 70% left calc(var(--text-max-width) + 20vw),
+      top 55% left calc(var(--text-max-width) + 18vw),
       center,
       center;
+    background-size: 330px, cover, cover;
   }
 
   .promo__title {
@@ -74,7 +76,7 @@
   }
 
   .promo__subtitle {
-    font-size: clamp(16px, 2.5vw, 22px);
+    font-size: clamp(16px, 2.86vw, 22px);
   }
 }
 
